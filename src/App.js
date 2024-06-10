@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar, Banner } from "./components";
+import BottomBar from "./components/BottomBar";
+import Category from "./components/Category";
+import Vacations from "./components/Vacations";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Banner />
+      {/* <div className='absolute bottom-0 lg:ml-24 mx-12'>
+      </div> */}
+      <BottomBar />
+    </>
   );
 }
 
